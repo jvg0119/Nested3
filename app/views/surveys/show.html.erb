@@ -1,0 +1,34 @@
+
+<div class="container">
+  <h2><%= @survey.name %></h2>
+
+  <div>
+		<%= link_to "Edit", edit_survey_path %> | 
+		<%= link_to "Delete", survey_path(@survey), method: :delete %> |
+		<%= link_to "Back to all surveys", surveys_path %>
+	</div>
+
+	<% question_counter = 1 %>
+  <% @survey.questions.each do |question| %>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">	
+    	<strong>Q<%= question_counter %>. <%= question.content %></strong>
+    	<% answer_counter = 1 %>     	
+
+    	<% question.answers.each do |answer| %>
+    </div>
+    
+	    <div class="panel-body">	    	
+	    	<p>A<%= answer_counter %>. <%= answer.content %><p>
+	    	<% answer_counter += 1 %>        
+	    <% end %>
+	    <% question_counter += 1 %>
+    	</div>
+	</div>
+
+	<% end %>
+
+</div>
+
+

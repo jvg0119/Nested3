@@ -1,0 +1,11 @@
+<div class="form-group question_field">
+	<%= f.label :content, "Question:" %>
+	<%= f.text_area :content, rows: 2, class: "form-control", placeholder: "Enter question" %>
+	<%= f.check_box :_destroy %>
+	<%= f.label :_destroy, "Remove question" %>
+
+	<h5>Answers:</h5>
+	<%= f.fields_for :answers do |builder| %>
+		<%= render 'answer_fields', f: builder %>
+	<% end %>
+</div>
