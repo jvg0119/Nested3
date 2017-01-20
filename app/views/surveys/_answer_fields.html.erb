@@ -1,6 +1,7 @@
 <div class="form-group answer_field">
 	<%#= f.label :content %>
 	<%= f.text_field :content, class: "form-control", placeholder: "Enter answer" %>
-	<%= f.check_box :_destroy %>
-	<%= f.label :_destroy, "Remove answer" %>
+	<%#= f.check_box :_destroy %>
+	<%#= f.label :_destroy, "Remove answer" %>
+	<%= f.link_to_remove "Remove this answer" %>
 </div>

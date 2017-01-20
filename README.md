@@ -8,8 +8,6 @@
 * Rails version
 	Rails 5.0.1
 
-###
-
 * Bootstrap-sass	https://github.com/twbs/bootstrap-sass
 * Navbar
 * Flash Message
@@ -27,5 +25,9 @@ survey
 	* question has_many :answers
 	* answer belongs_to :question 
 
+* Add nested_form gem 	https://github.com/ryanb/nested_form 
+* Change form_for to nested_form_for
+* Add link_to_add in the form
+* Add link_to_remove in the form
 
 
