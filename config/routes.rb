@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+	devise_scope :user do
+  	get 'users/sign_out', to: 'devise/sessions#destroy'
+	end
+  devise_for :users
+  resources :users, only: [:index, :update]
 	resources :surveys
 
   get 'index' => 'welcome#index'

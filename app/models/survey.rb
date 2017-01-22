@@ -3,5 +3,6 @@ class Survey < ApplicationRecord
 	accepts_nested_attributes_for :questions,
 								reject_if: lambda { |a| a[:content].blank? },
 								allow_destroy: true
-
+  belongs_to :user
+  
 end

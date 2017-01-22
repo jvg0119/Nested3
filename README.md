@@ -26,8 +26,14 @@ survey
 	* answer belongs_to :question 
 
 * Add nested_form gem 	https://github.com/ryanb/nested_form 
-* Change form_for to nested_form_for
-* Add link_to_add in the form
-* Add link_to_remove in the form
+	* Change form_for to nested_form_for
+	* Add link_to_add in the form
+	* Add link_to_remove in the form
 
+* Add devise user 	https://github.com/plataformatec/devise
+	Home 	https://github.com/plataformatec/devise/wiki 
+	Devise Tutorials Home	https://github.com/danweller18/devise/wiki
+	Permit additional parameters	https://github.com/plataformatec/devise#strong-parameters
 
+* Add pundit 	https://github.com/elabs/pundit 
+	

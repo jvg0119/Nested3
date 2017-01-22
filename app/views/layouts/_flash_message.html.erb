@@ -1,7 +1,7 @@
 <%# flash[:danger] = "Test only" %>
 
 <% flash.each do |key, msg| %>
-	<div class="alert alert-<%= key %>">
+	<div class="alert alert-<%= flash_class(key) %>">
 		<button type="button" class="close" data-dismiss="alert">×</button>
 		<%= msg %>
 	</div>

@@ -1,3 +1,15 @@
-<h1>All Surveys</h1>
 
-<%= render @surveys %>
+<div class="container">
+  <h2>All Surveys</h2>
+  <p>Survey list:</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+ 					<%#= table_heading %>
+      </tr>
+    </thead>
+		<%= render @surveys %>
+  </table>
+</div>
+
+<%#= link_to "Back to all surveys", surveys_path %>

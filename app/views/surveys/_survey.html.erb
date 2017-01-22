@@ -1,2 +1,7 @@
-
-<h4><%= link_to survey.name, survey %></h4>
+<tbody>
+  <tr>
+    <td><%= link_to survey.name, survey %></td>
+    <td><%= link_to "Edit", edit_survey_path(survey) if policy(survey).edit? %></td>
+    <td><%= link_to "Delete", survey_path(survey), method: :delete  if policy(survey).destroy? %></td>
+  </tr>
+</tbody>

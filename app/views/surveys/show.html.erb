@@ -1,11 +1,11 @@
 
 <div class="container">
   <h2><%= @survey.name %></h2>
-
+	<%= link_to "Back to all surveys", surveys_path %>
+  
   <div>
-		<%= link_to "Edit", edit_survey_path %> | 
-		<%= link_to "Delete", survey_path(@survey), method: :delete %> |
-		<%= link_to "Back to all surveys", surveys_path %>
+		<%= link_to "Edit", edit_survey_path if policy(@survey).edit? %> 
+		<%= link_to "Delete", survey_path(@survey), method: :delete if policy(@survey).destroy? %>		
 	</div>
 
 	<% question_counter = 1 %>

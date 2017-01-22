@@ -6,8 +6,8 @@
 	<%= f.link_to_remove "Remove this question" %>
 
 	<h5>Answers:</h5>
-	<%= f.fields_for :answers do |builder| %>
-		<%= render 'answer_fields', f: builder %>
-	<% end %>
+	<%= f.fields_for :answers %> <!-- #do |builder| %> -->
+		<%#= render 'answer_fields', f: builder %>
+	<%# end %>
 	<p><%= f.link_to_add "Add an answer", :answers %></p>
 </div>

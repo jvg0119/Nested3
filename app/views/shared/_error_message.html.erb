@@ -1,0 +1,11 @@
+
+<div class="well error-message">
+	<h4><%= pluralize @survey.errors.count, "error" %> needs to be corrected to save this record:</h4>
+	<% if object.errors.any? %>
+		<ul>
+		<% object.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+		<% end %>
+		</ul>
+	<% end %>
+</div>
