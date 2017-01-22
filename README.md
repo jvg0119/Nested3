@@ -31,9 +31,9 @@ survey
 	* Add link_to_remove in the form
 
 * Add devise user 	https://github.com/plataformatec/devise
-	Home 	https://github.com/plataformatec/devise/wiki 
-	Devise Tutorials Home	https://github.com/danweller18/devise/wiki
-	Permit additional parameters	https://github.com/plataformatec/devise#strong-parameters
+	* Home 	https://github.com/plataformatec/devise/wiki 
+	* Devise Tutorials Home	https://github.com/danweller18/devise/wiki
+	* Permit additional parameters	https://github.com/plataformatec/devise#strong-parameters
 
 * Add pundit 	https://github.com/elabs/pundit 
-	
+
