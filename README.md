@@ -37,3 +37,12 @@ survey
 
 * Add pundit 	https://github.com/elabs/pundit 
 
+* Add Administrate gem 	
+	* anouncing administrate 	https://robots.thoughtbot.com/announcing-administrate
+	* administrate 	https://github.com/thoughtbot/administrate
+	* getting started with administrate 	http://administrate-prototype.herokuapp.com/getting_started
+
+
+
+
+

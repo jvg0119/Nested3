@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    resources :users
+resources :answers
+resources :questions
+resources :surveys
+
+    root to: "users#index"
+  end
+
 	devise_scope :user do
   	get 'users/sign_out', to: 'devise/sessions#destroy'
 	end

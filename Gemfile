@@ -67,6 +67,9 @@ gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 gem 'pundit', '~> 1.1'
 
+gem 'administrate', '~> 0.3.0'
+gem 'bourbon', '~> 4.2', '>= 4.2.7'
+
 
 
 
