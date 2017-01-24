@@ -14,25 +14,41 @@ user = User.new(
 user.skip_confirmation!
 user.save
 
-1.upto(5) do
-  @name = Faker::Name.first_name 
-  user = User.new(
-        name: @name,
-        email: "#{@name}@example.com",
-        password: "password",
-        )
-  user.skip_confirmation!
-  user.save
-end
+user = User.new(
+      name: "Jim",
+      email: "jim@example.com",
+      password: "password",
+      )
+user.skip_confirmation!
+user.save
+
+user = User.new(
+      name: "More",
+      email: "more@example.com",
+      password: "password",
+      )
+user.skip_confirmation!
+user.save
+
+# 1.upto(5) do
+#   @name = Faker::Name.first_name 
+#   user = User.new(
+#         name: @name,
+#         email: "#{@name}@example.com",
+#         password: "password",
+#         )
+#   user.skip_confirmation!
+#   user.save
+# end
 
 users = User.all 
 
 1.upto 20 do |n|
 	survey = Survey.create(name: "Rails Survey #{n}", user: users.sample)
-	rand(1..3).times do |x| 
-		question = survey.questions.create(content: "#{Faker::Hipster.sentence(10, true, 20)}?")
-		rand(1..3).times do |y|
-			question.answers.create(content: "#{Faker::Hipster.sentence(5, true, 10)}")
+	1.upto rand(1..3) do |x| 
+		question = survey.questions.create(content: "This is question number #{x}?")
+		1.upto rand(1..3) do |y|
+			question.answers.create(content: "This is answer number #{y} for question number #{x}")
 		end
 	end
 end
